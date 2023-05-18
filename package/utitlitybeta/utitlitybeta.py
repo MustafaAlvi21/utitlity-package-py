@@ -1,15 +1,15 @@
 # # Import sys and append path for access directory as a module
-# import sys
-# sys.path.append('./apis')
+import sys
+sys.path.append('./apis')
 
 # import file as a module from a directory
-from apis import wallets
-from apis import transactions
-from apis import tokens
-from apis import contracts
-from apis import metadata
-from apis import nfts
-from apis import sfts
+import wallets
+import transactions
+import tokens
+import contracts
+import metadata
+import nfts
+import sfts
 
 
 
@@ -127,7 +127,7 @@ class Utility:
     
 
 
-myUtility = Utility("588defcd-92ad-4891-93c8-ddd5bf41ea9d")
+# myUtility = Utility("588defcd-92ad-4891-93c8-ddd5bf41ea9d")
 # myUtility = Utility("f253d57f-1740-4603-9697-2dc1399eef73")
 
 # res = myUtility.nftForWallet("0xf7f9e7be5971dd17563dcbaa745975c0fb919669", 1)
@@ -142,8 +142,8 @@ myUtility = Utility("588defcd-92ad-4891-93c8-ddd5bf41ea9d")
 # res = myUtility.getWallet("address")
 # print(f" Response ===>>> {res}")
 
-res = myUtility.getWallets(1)
-print(f" Response ===>>> {res}")
+# res = myUtility.getWallets(1)
+# print(f" Response ===>>> {res}")
 
 # res = myUtility.createWallet(1, "python wallet")
 # print(f" Response ===>>> {res}")
